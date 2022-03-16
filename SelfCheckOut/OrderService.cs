@@ -12,10 +12,7 @@ namespace SelfCheckOut
 
         //AddItem(Order, LineItem)
 
-        //foreach(List a in list)
-        //    {
-
-        //    }
+        
         //FinalizeOrder(Order)
     }
 }
