@@ -8,11 +8,22 @@ namespace SelfCheckOut
 {
     class LineItem
     {
-        decimal price = ConsoleIO.GetPrice();       //readonly, protection
-        decimal quantity = ConsoleIO.GetQuantity();
+        //public void GetLineItem()
+        //{
+        // decimal price = ConsoleIO.GetPrice();       //readonly, protection, private
+        // decimal quantity = ConsoleIO.GetQuantity();
+        //}    
 
-        List<decimal> list = //create add to make list
-      
-        //value
+        public decimal GetPriceForService()
+        {
+            decimal price = ConsoleIO.GetPrice();
+            return price;
+        }
+
+        public decimal GetQuantForService()
+        {
+            decimal quantity = ConsoleIO.GetQuantity();
+            return quantity;
+        }
     }
 }

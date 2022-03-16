@@ -8,21 +8,19 @@ namespace SelfCheckOut
 {
     class Order
     {
-        //in angle
-        List<LineItem> list = new List<LineItem>();
-
-        public void TestMethod(List<decimal> list)
+        //List
+        public List<decimal> CreateList()
         {
-            
-            //for (int i = 0; i < list.Count; i++)
-            //{
-            //    list.Add(new LineItem())
-            //}
+            List<decimal> lineItems = new List<decimal>();
+            return lineItems;
         }
+        
 
+        //get from OrderService, AddItem
 
-        //        List
         //TotalItemCost
+        //math
+
         //foreach(List a in list)
         //    {
 

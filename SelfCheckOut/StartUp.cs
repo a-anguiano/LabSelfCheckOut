@@ -15,7 +15,7 @@ namespace SelfCheckOut
 
             while (true)
             {
-                if (GetItemEntries()) break;
+                if (GetItemEntries()) break;    //need to keep this running
             }
             
         }
