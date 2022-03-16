@@ -27,14 +27,17 @@ namespace SelfCheckOut
 
             if (price == 0)        
             {
+                decimal quantity = ConsoleIO.GetQuantity();
                 ConsoleIO.DisplayMessage("===========");
                 ConsoleIO.DisplayMessage("RECEIPT");
                 ConsoleIO.DisplayMessage("===========");
-//                3 items @ $2.00   $6.00
-//Sales Tax: .07    $0.42
-//Total:           $6.42
-//===============
-//Press Any Key To Continue
+                ConsoleIO.DisplayMessage($"{quantity} items @ {price:c}\t ");   //total
+
+                //                3 items @ $2.00   $6.00
+                //Sales Tax: .07    $0.42
+                //Total:           $6.42
+                //===============
+                //Press Any Key To Continue
                 //press any key to continue, Console.ReadKey()
                 //Console.Clear()
                 return true;
@@ -48,7 +51,12 @@ namespace SelfCheckOut
             else
             {
                 decimal quantity = ConsoleIO.GetQuantity();
+                Order o = new Order();              //testing
+                
+                decimal totItem = o.CalcTotalItemCost(o.CreateList());
                 ConsoleIO.DisplayMessage($"{quantity} items @ {price:c}");
+                ConsoleIO.DisplayMessage($"{totItem}");
+
                 //messages 3 items @ $2.00
                 return true;
             } 

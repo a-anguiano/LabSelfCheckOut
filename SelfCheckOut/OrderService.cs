@@ -21,14 +21,10 @@ namespace SelfCheckOut
             lineItems.Add(price);
             lineItems.Add(quantity);
         }
-        //public void AddItem(decimal price, decimal quantity)
-        //{
-        //    LineItem l = new LineItem();
-        //    l.CreateList(price, quantity);      //consider making 2 lists
 
-        //    ConsoleIO.DisplayMessage($"");      //check list 
-        //}
+        
 
         //FinalizeOrder(Order)
+        //receipt
     }
 }

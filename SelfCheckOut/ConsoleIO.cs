@@ -15,7 +15,7 @@ namespace SelfCheckOut
 
         public static decimal GetTax()
         {
-            return Validation.PromptUser4Dec("Enter the tax: "); //decimal?
+            return Validation.PromptUser4Dec("Enter the tax: % "); //decimal?, for now assuming whol number, ex. 7%
         }
 
         public static decimal GetPrice()
